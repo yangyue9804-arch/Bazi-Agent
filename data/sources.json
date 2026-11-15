@@ -1,0 +1,155 @@
+[
+  {
+    "id": "34bc98911ca3cc9167f5",
+    "url": "https://daokeyi.com/ming/bazi/hehun/",
+    "title": "道可易 合婚方法比较",
+    "topics": [
+      "relationships"
+    ],
+    "queries": [],
+    "first_discovered_at": "2026-11-15T02:17:51+00:00",
+    "review_status": "candidate",
+    "rights_status": "not_assessed",
+    "school": "unclassified",
+    "editorial_note": "已核对合婚主题文章 页面标注2026年10月24日。方法与出处待审核。",
+    "content_ingested": false,
+    "last_seen_at": "2026-11-15T02:17:51+00:00",
+    "discovery_method": "manual_page_metadata_review",
+    "metadata_checked_at": "2026-11-15T02:17:51+00:00"
+  },
+  {
+    "id": "b4b1f08ebc84fd05cd9a",
+    "url": "https://github.com/6tail/lunar-python",
+    "title": "lunar-python 排盘与历法项目",
+    "topics": [
+      "engineering"
+    ],
+    "queries": [],
+    "first_discovered_at": "2026-11-15T02:17:51+00:00",
+    "review_status": "candidate",
+    "rights_status": "not_assessed",
+    "school": "unclassified",
+    "editorial_note": "已核对官方项目介绍。作为排盘候选 仍需口径与边界测试。",
+    "content_ingested": false,
+    "last_seen_at": "2026-11-15T02:17:51+00:00",
+    "discovery_method": "manual_page_metadata_review",
+    "metadata_checked_at": "2026-11-15T02:17:51+00:00"
+  },
+  {
+    "id": "d327396d59cb726f1871",
+    "url": "https://github.com/Explosion-svg/ziping-bazi",
+    "title": "ziping-bazi 子平工具项目",
+    "topics": [
+      "engineering"
+    ],
+    "queries": [],
+    "first_discovered_at": "2026-11-15T02:17:51+00:00",
+    "review_status": "candidate",
+    "rights_status": "not_assessed",
+    "school": "unclassified",
+    "editorial_note": "已核对项目页面。可研究其排盘与知识检索结构 未审计代码或复制内容。",
+    "content_ingested": false,
+    "last_seen_at": "2026-11-15T02:17:51+00:00",
+    "discovery_method": "manual_page_metadata_review",
+    "metadata_checked_at": "2026-11-15T02:17:51+00:00"
+  },
+  {
+    "id": "11dfe30879f4db9cbb44",
+    "url": "https://kaiyunlab.tw/cn/guide",
+    "title": "开运研究所 命理入门指南",
+    "topics": [
+      "fundamentals",
+      "relationships"
+    ],
+    "queries": [],
+    "first_discovered_at": "2026-11-15T02:17:51+00:00",
+    "review_status": "candidate",
+    "rights_status": "not_assessed",
+    "school": "unclassified",
+    "editorial_note": "已核对指南索引。索引含不同术数 内容需要按体系分别审查。",
+    "content_ingested": false,
+    "last_seen_at": "2026-11-15T02:17:51+00:00",
+    "discovery_method": "manual_page_metadata_review",
+    "metadata_checked_at": "2026-11-15T02:17:51+00:00"
+  },
+  {
+    "id": "953e8577f4159decd94a",
+    "url": "https://wiki.openfate.ai/zh-hant/bazi/classics-schools-cases/zi-ping-zhen-quan",
+    "title": "OpenFate 子平真詮导读",
+    "topics": [
+      "classics",
+      "fundamentals"
+    ],
+    "queries": [],
+    "first_discovered_at": "2026-11-15T02:17:51+00:00",
+    "review_status": "candidate",
+    "rights_status": "not_assessed",
+    "school": "unclassified",
+    "editorial_note": "已核对现代导读页面。作者解释与古籍原文应分开审查。",
+    "content_ingested": false,
+    "last_seen_at": "2026-11-15T02:17:51+00:00",
+    "discovery_method": "manual_page_metadata_review",
+    "metadata_checked_at": "2026-11-15T02:17:51+00:00"
+  },
+  {
+    "id": "a93406dfa99da189c91b",
+    "url": "https://wiki.tianjiyao.com/bazi/faq.html",
+    "title": "天机爻 八字常见问题",
+    "topics": [
+      "fundamentals",
+      "relationships"
+    ],
+    "queries": [],
+    "first_discovered_at": "2026-11-15T02:17:51+00:00",
+    "review_status": "candidate",
+    "rights_status": "not_assessed",
+    "school": "unclassified",
+    "editorial_note": "已核对FAQ页面。用于寻找问题与术语 不视为已批准判断规则。",
+    "content_ingested": false,
+    "last_seen_at": "2026-11-15T02:17:51+00:00",
+    "discovery_method": "manual_page_metadata_review",
+    "metadata_checked_at": "2026-11-15T02:17:51+00:00"
+  },
+  {
+    "id": "ef5773e571ef2bdabc24",
+    "url": "https://www.bilibili.com/video/BV1Yp421272r/",
+    "title": "四柱八字零基础到实战教程200节 青龙课程",
+    "topics": [
+      "family",
+      "fundamentals",
+      "relationships",
+      "timing",
+      "video"
+    ],
+    "queries": [],
+    "first_discovered_at": "2026-11-15T02:17:51+00:00",
+    "review_status": "candidate",
+    "rights_status": "not_assessed",
+    "school": "unclassified",
+    "editorial_note": "已核对课程目录 页面显示106分集。未读取字幕或课程正文。",
+    "content_ingested": false,
+    "last_seen_at": "2026-11-15T02:17:51+00:00",
+    "discovery_method": "manual_page_metadata_review",
+    "metadata_checked_at": "2026-11-15T02:17:51+00:00"
+  },
+  {
+    "id": "3a66e18474bf7ece7fb9",
+    "url": "https://zh.wikisource.org/wiki/滴天髓闡微",
+    "title": "滴天髓闡微 维基文库文本入口",
+    "topics": [
+      "classics",
+      "family",
+      "timing"
+    ],
+    "queries": [],
+    "first_discovered_at": "2026-11-15T02:17:51+00:00",
+    "review_status": "candidate",
+    "rights_status": "not_assessed",
+    "school": "unclassified",
+    "editorial_note": "已核对文本页面及章节目录。尚未逐章校对版本或纳入规则库。",
+    "content_ingested": false,
+    "last_seen_at": "2026-11-15T02:17:51+00:00",
+    "discovery_method": "manual_page_metadata_review",
+    "metadata_checked_at": "2026-11-15T02:17:51+00:00"
+  }
+]
