@@ -1,0 +1,51 @@
+name: Discover Bazi Sources
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: latest uses a 31-day page-age filter; evergreen has no date filter
+        required: true
+        default: latest
+        type: choice
+        options: [latest, evergreen]
+  schedule:
+    - cron: '23 14 * * 1'
+permissions:
+  contents: write
+concurrency:
+  group: bazi-source-discovery
+  cancel-in-progress: false
+jobs:
+  collect:
+    if: github.event_name == 'workflow_dispatch' || vars.ENABLE_SCHEDULED_COLLECTION == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+      - name: Collect public source metadata
+        id: discovery
+        continue-on-error: true
+        env:
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+          MODE: ${{ inputs.mode || 'latest' }}
+        run: python bazi_resources.py collect --mode "$MODE"
+      - name: Save catalogue updates
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/sources.json
+          if test -f data/last_run.json; then git add data/last_run.json; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh Bazi source catalogue'
+            git push
+          fi
+      - name: Report collection failure
+        if: steps.discovery.outcome == 'failure'
+        run: |
+          echo 'Collection incomplete. Check key, quota and data/last_run.json if present.'
+          exit 1
