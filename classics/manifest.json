@@ -58,14 +58,16 @@
     "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
     "retrieved_at": "2026-11-15T02:22:48+00:00",
     "source_file_sha256": "4f3251dc68e66a40cd8748e969390984d4afd7b3f850676f2723de821db69063",
-    "file_sha256": "ed86c97451abb69d328942fe0716a918ae33250a56bb3e2acf46daa612bac656",
-    "body_characters": 26536,
+    "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+    "body_characters": 26441,
     "heading_count": 47,
     "extracted_original_passages": 289,
     "license": "Ancient-original passages only; no modern commentary included",
     "attribution": "Traditionally attributed to Shen Xiaozhan; transcription located via liangqis/Chinese-minglixue",
     "review_status": "transcription_unverified",
     "rules_approved": false,
-    "edition_note": "47-chapter mechanically extracted reading text; prefaces and unlabeled appendices excluded"
+    "edition_note": "47-chapter mechanically extracted reading text; prefaces and unlabeled appendices excluded",
+    "previous_file_sha256": "ed86c97451abb69d328942fe0716a918ae33250a56bb3e2acf46daa612bac656",
+    "cleanup_note": "Removed one confirmed web-pagination fragment during first knowledge-card extraction; no historical text silently corrected."
   }
 ]
