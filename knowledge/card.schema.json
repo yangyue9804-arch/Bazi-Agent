@@ -1,0 +1,261 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bazi knowledge card",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "version",
+    "topic",
+    "title",
+    "card_type",
+    "evidence_relation",
+    "principle",
+    "sources",
+    "applicability",
+    "interpretation",
+    "review",
+    "evaluation_examples",
+    "related_cards",
+    "license"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^BZ-[A-Z]+-[0-9]{3}$"
+    },
+    "version": {
+      "type": "string"
+    },
+    "topic": {
+      "enum": [
+        "career",
+        "love",
+        "family",
+        "wealth",
+        "children",
+        "timing",
+        "compatibility"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "card_type": {
+      "enum": [
+        "classical_method",
+        "historical_convention",
+        "textual_disagreement",
+        "editorial_workflow",
+        "product_boundary"
+      ]
+    },
+    "evidence_relation": {
+      "enum": [
+        "direct_text",
+        "editorial_application",
+        "cross_text_conflict",
+        "evidence_gap"
+      ]
+    },
+    "principle": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "book_id",
+          "chapter",
+          "quote",
+          "repository_path",
+          "line_start",
+          "line_end",
+          "file_sha256",
+          "source_layer"
+        ],
+        "properties": {
+          "quote": {
+            "type": "string",
+            "minLength": 1
+          },
+          "line_start": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "line_end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "file_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      }
+    },
+    "applicability": {
+      "type": "object",
+      "required": [
+        "required_inputs",
+        "checks",
+        "exceptions",
+        "requires_expert_judgment",
+        "auto_applicable"
+      ],
+      "properties": {
+        "required_inputs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "checks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "exceptions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "auto_applicable": {
+          "const": false
+        },
+        "requires_expert_judgment": {
+          "const": true
+        }
+      }
+    },
+    "interpretation": {
+      "type": "object",
+      "required": [
+        "allowed",
+        "forbidden",
+        "modern_reflection",
+        "reflection_is_classical_claim"
+      ],
+      "properties": {
+        "allowed": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "forbidden": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "modern_reflection": {
+          "type": "string"
+        },
+        "reflection_is_classical_claim": {
+          "const": false
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "status",
+        "expert_reviewed",
+        "reviewer",
+        "reviewed_at",
+        "publication_eligible"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "draft",
+            "approved",
+            "rejected"
+          ]
+        },
+        "expert_reviewed": {
+          "type": "boolean"
+        },
+        "publication_eligible": {
+          "type": "boolean"
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reviewed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "related_cards": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evaluation_examples": {
+      "type": "object"
+    },
+    "license": {
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "review": {
+            "properties": {
+              "status": {
+                "const": "approved"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "review": {
+            "properties": {
+              "expert_reviewed": {
+                "const": true
+              },
+              "publication_eligible": {
+                "const": true
+              },
+              "reviewer": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reviewed_at": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
