@@ -1,0 +1,13 @@
+{
+  "results_per_query": 10,
+  "queries": [
+    {"topic": "classics", "query": "八字 子平真诠 滴天髓 古籍 原文"},
+    {"topic": "fundamentals", "query": "八字 十神 旺衰 格局 用神 教学"},
+    {"topic": "career", "query": "八字 事业 财运 命理 分析 方法"},
+    {"topic": "relationships", "query": "八字 合婚 夫妻宫 双人 命盘 方法"},
+    {"topic": "timing", "query": "八字 大运 流年 流月 流日 判断 方法"},
+    {"topic": "family", "query": "八字 六亲 家庭 亲子 命理 教学"},
+    {"topic": "video", "query": "site:bilibili.com/video 八字 子平 教学"},
+    {"topic": "engineering", "query": "site:github.com 八字 bazi 排盘 知识库"}
+  ]
+}
