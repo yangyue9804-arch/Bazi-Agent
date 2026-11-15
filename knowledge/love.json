@@ -1,0 +1,399 @@
+[
+  {
+    "schema_version": "1.0",
+    "id": "BZ-LOVE-001",
+    "version": "0.1.0",
+    "topic": "love",
+    "topic_label": "爱情",
+    "title": "关系分析须区分宫位与星",
+    "card_type": "historical_convention",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "论妻子同时讨论妻宫与妻星 是历史上的单人命盘关系取法 不能自动当成双人配对。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "24 论妻子",
+        "source_layer": "source_transcription",
+        "quote": "既看妻宫，又看妻星。\n妻星者，干头之财也。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 673,
+        "line_end": 674,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "所采用的历史关系取法",
+        "用户自己描述的关系状态"
+      ],
+      "checks": [
+        "明确宫位与星不是同一指标",
+        "不把古代男性妻星取法套用所有关系"
+      ],
+      "exceptions": [
+        "不据此默认用户性别或性取向",
+        "不推出对方真实品性"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "介绍历史上宫与星分看的方法"
+      ],
+      "forbidden": [
+        "财星就是现任伴侣",
+        "有妻星便必已婚"
+      ],
+      "modern_reflection": "实际伴侣特征与关系需求由双方提供。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "解释妻宫与妻星的区别。",
+      "should_not_use": "不知道用户关系状态却断言已婚。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-LOVE-002",
+    "version": "0.1.0",
+    "topic": "love",
+    "topic_label": "爱情",
+    "title": "关系宫位须结合喜忌解释",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "文本不把某类十神落在关系宫位视为永远有利或不利。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "24 论妻子",
+        "source_layer": "source_transcription",
+        "quote": "此盖月令用神，配成喜忌。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 667,
+        "line_end": 667,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      },
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "24 论妻子",
+        "source_layer": "source_transcription",
+        "quote": "其理不可执一。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 671,
+        "line_end": 671,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "格局喜忌",
+        "日支及关系取法"
+      ],
+      "checks": [
+        "先确定喜忌方法",
+        "审查宫位与整体结构的关系"
+      ],
+      "exceptions": [
+        "原文的贤贵等评价不转成对现实伴侣的等级判断"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "说明同一种宫位符号在不同结构中解释不同"
+      ],
+      "forbidden": [
+        "日坐伤官一定婚姻不好",
+        "日坐正财保证好婚姻"
+      ],
+      "modern_reflection": "把沟通、尊重与分工等实际相处信息单独记录。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户问为什么不能仅凭日支十神看婚姻。",
+      "should_not_use": "依据一个日支标签建议分手。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-LOVE-003",
+    "version": "0.1.0",
+    "topic": "love",
+    "topic_label": "爱情",
+    "title": "关系星透出也需检查成格破格",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "关系星的讨论含成格与破格两条分支 不能把星透等同关系必然顺利。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "24 论妻子",
+        "source_layer": "source_transcription",
+        "quote": "妻透而成局，若官格透财、印多逢财、食伤透财为用之类，即坐下无用，亦主内助。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 675,
+        "line_end": 675,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      },
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "24 论妻子",
+        "source_layer": "source_transcription",
+        "quote": "妻透而破格，若印轻财露、食神伤官、透煞逢财之类，即坐下有用，亦防刑克。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 676,
+        "line_end": 676,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "所选星的历史定义",
+        "整体成败判断"
+      ],
+      "checks": [
+        "比较成局与破格条件",
+        "将古籍结论与现代建议分栏"
+      ],
+      "exceptions": [
+        "刑克不转译为人身伤害或伴侣疾病预测"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "介绍取法中的条件分支"
+      ],
+      "forbidden": [
+        "某伴侣克你",
+        "感情顺利与否由星透唯一决定"
+      ],
+      "modern_reflection": "讨论现实中伴侣是否支持彼此目标。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "比较同样有财透出为何文本分两种解释。",
+      "should_not_use": "以星透证明对象可靠或不可靠。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-LOVE-004",
+    "version": "0.1.0",
+    "topic": "love",
+    "topic_label": "爱情",
+    "title": "古籍刑冲判语不直接成为离婚预言",
+    "card_type": "product_boundary",
+    "evidence_relation": "editorial_application",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "原文出现宫位刑冲与难偕老的历史判语 该引文不构成现代离婚预测的验证证据。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "24 论妻子",
+        "source_layer": "source_transcription",
+        "quote": "又有妻透成格，或妻宫有用而坐下刑冲，未免得美妻而难偕老。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 677,
+        "line_end": 677,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "用户问题",
+        "所引原文",
+        "关系现实资料"
+      ],
+      "checks": [
+        "先标明这是历史判语",
+        "把结构描述与现实事件判断分开"
+      ],
+      "exceptions": [
+        "此卡是现代产品表达边界 不是古籍给出的风险概率"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "说明来源为何讨论刑冲 以及不能据此确定离婚"
+      ],
+      "forbidden": [
+        "一定离婚",
+        "伴侣会早亡",
+        "必须分手才能化解"
+      ],
+      "modern_reflection": "关系决策依据安全、意愿、沟通及实际行为。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户因看到刑冲而担心一定会离婚。",
+      "should_not_use": "把历史案例当作用户必然遭遇。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-LOVE-005",
+    "version": "0.1.0",
+    "topic": "love",
+    "topic_label": "爱情",
+    "title": "单人关系解读不能代替伴侣事实",
+    "card_type": "product_boundary",
+    "evidence_relation": "editorial_application",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "妻宫妻星等单盘方法只能作为该传统解释体系的材料 不能据此读取另一人的心理或行为。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "24 论妻子",
+        "source_layer": "source_transcription",
+        "quote": "既看妻宫，又看妻星。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 673,
+        "line_end": 673,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "当前用户问题",
+        "是否有对方授权资料"
+      ],
+      "checks": [
+        "区分单人资料和对方资料",
+        "对现实行为问题要求现实证据"
+      ],
+      "exceptions": [
+        "古籍未提供读心或验忠诚的方法证据"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "说明当前只能解释用户单盘的关系主题"
+      ],
+      "forbidden": [
+        "对方一定出轨",
+        "对方现在还爱你",
+        "命中注定某个人"
+      ],
+      "modern_reflection": "可建议用具体事件和直接沟通了解伴侣需求。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "只有自己的出生资料时问对方是否忠诚。",
+      "should_not_use": "把单盘中的关系符号当成已证实的对方事实。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  }
+]
