@@ -1,0 +1,387 @@
+[
+  {
+    "schema_version": "1.0",
+    "id": "BZ-WEALTH-001",
+    "version": "0.1.0",
+    "topic": "wealth",
+    "topic_label": "财富",
+    "title": "财星是传统分类 不等于现金余额",
+    "card_type": "historical_convention",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "财在原文中有多种象义 不能等同现代账户金额或投资收益。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "33 论财",
+        "source_layer": "source_transcription",
+        "quote": "财为我克，使用之物也，以能生官，所以为美。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 885,
+        "line_end": 885,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      },
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "33 论财",
+        "source_layer": "source_transcription",
+        "quote": "为财帛，为妻妾，为才能，为驿马，皆财类也。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 886,
+        "line_end": 886,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "日主",
+        "十神映射"
+      ],
+      "checks": [
+        "说明传统分类与多义性",
+        "现代财务数据须用户另行提供"
+      ],
+      "exceptions": [
+        "妻妾等属于历史语境 不作为现代性别角色规范"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "解释财星一词的传统用法"
+      ],
+      "forbidden": [
+        "据财星估算净资产",
+        "偏财代表适合买某股票"
+      ],
+      "modern_reflection": "财务行动基于实际收入、支出和风险承受能力。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "解释命盘财星与实际财富有何区别。",
+      "should_not_use": "要求用财星数量计算年薪。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-WEALTH-002",
+    "version": "0.1.0",
+    "topic": "wealth",
+    "topic_label": "财富",
+    "title": "财用食生须身强等配合",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "财用食生在文本中有身强、官是否显露与比劫等配套条件。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "33 论财",
+        "source_layer": "source_transcription",
+        "quote": "有财用食生者，身强而不露官，略带一位比劫，益觉有情",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 894,
+        "line_end": 894,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "财格与食神关系",
+        "日主及官星状态"
+      ],
+      "checks": [
+        "先确认财格取法",
+        "检查身强及不露官条件"
+      ],
+      "exceptions": [
+        "不与所有食神生财表述混同",
+        "不由财格推确定收入"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "说明食生财属于有条件的结构关系"
+      ],
+      "forbidden": [
+        "有食神就能副业变现",
+        "输出内容必赚钱"
+      ],
+      "modern_reflection": "副业变现需测试客户需求、获客与交付能力。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "解释财用食生结构的前提。",
+      "should_not_use": "因计划做自媒体就保证能赚钱。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-WEALTH-003",
+    "version": "0.1.0",
+    "topic": "wealth",
+    "topic_label": "财富",
+    "title": "财印同见须审查配置",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "同有财、食与印时 文本特别区分彼此是否相碍。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "33 论财",
+        "source_layer": "source_transcription",
+        "quote": "有用食而兼用印者，食与印两不相碍，或有暗官而去食护官，皆贵格也。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 900,
+        "line_end": 900,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "财格取用",
+        "食印位置及关系"
+      ],
+      "checks": [
+        "分别确认两不相碍与去食护官等路径",
+        "不得仅凭元素齐全判断"
+      ],
+      "exceptions": [
+        "两条路径不可互相替代",
+        "现代创业与资产配置不由此直接推导"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "解释多个十神需检查功能关系"
+      ],
+      "forbidden": [
+        "财印齐全必富",
+        "适合杠杆投资"
+      ],
+      "modern_reflection": "可以引导区分学习投入与商业回报的现实权衡。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户问财印一起出现为何不一定同样解释。",
+      "should_not_use": "据此判断应买房还是买基金。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-WEALTH-004",
+    "version": "0.1.0",
+    "topic": "wealth",
+    "topic_label": "财富",
+    "title": "比劫出现不直接等于破财",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "财格文本含伤官化劫的条件说明 因而不能看见比劫就直接判断破财。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "33 论财",
+        "source_layer": "source_transcription_suspected_typo",
+        "quote": "有财用伤官者，财不甚旺而比强，辂露一位伤官以化之",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 905,
+        "line_end": 905,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "财与比劫的相对力量",
+        "伤官作用"
+      ],
+      "checks": [
+        "先核查财不甚旺、比强等条件",
+        "引文中的辂字保留来源字样并标待校"
+      ],
+      "exceptions": [
+        "此段来源含可疑转录字",
+        "不把比劫泛化为某位朋友一定夺财"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "说明比劫的解释依赖配合"
+      ],
+      "forbidden": [
+        "某亲友会骗钱",
+        "今年一定损失多少金额"
+      ],
+      "modern_reflection": "涉及合作时实际核对合同、分工和资金安排。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户问比劫是否必然导致破财。",
+      "should_not_use": "据比劫要求用户停止与朋友合作。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [
+      "suspected_transcription_character"
+    ],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-WEALTH-005",
+    "version": "0.1.0",
+    "topic": "wealth",
+    "topic_label": "财富",
+    "title": "财食轻重不同 取运条件相反",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "财用食生的取运讨论随财食与日主相对力量改变 不是财运一概有利。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "34 论财取运",
+        "source_layer": "source_transcription",
+        "quote": "财用食生，财食重而身轻，则喜助身；\n财食轻而身重，则仍行财食。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 929,
+        "line_end": 930,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "大运",
+        "经审核的身与财食强弱"
+      ],
+      "checks": [
+        "分别检查两个条件分支",
+        "取运口径须与原局口径一致"
+      ],
+      "exceptions": [
+        "不以喜财直接推出市场价格或收益",
+        "不保证某运期间财富增加"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "解释为什么同名财运不能对所有人统一评价"
+      ],
+      "forbidden": [
+        "某年投资必赚",
+        "依据喜财安排交易"
+      ],
+      "modern_reflection": "财富规划仍需现金流、目标与风险评估。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "两种不同原局为何对财食运解释不同。",
+      "should_not_use": "只看流年含财星就给买入建议。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  }
+]
