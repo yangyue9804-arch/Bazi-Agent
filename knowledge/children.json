@@ -1,0 +1,397 @@
+[
+  {
+    "schema_version": "1.0",
+    "id": "BZ-CHILDREN-001",
+    "version": "0.1.0",
+    "topic": "children",
+    "topic_label": "子女",
+    "title": "时支相关取法需要可靠出生时间",
+    "card_type": "historical_convention",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "论妻子中的子息方法明确先看时支 因而出生时间未知时不能使用该路径。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "24 论妻子",
+        "source_layer": "source_transcription",
+        "quote": "所以八字到手，要看子息，先看时支。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 688,
+        "line_end": 688,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "已知且可信的出生时间",
+        "完整四柱",
+        "所选子息取法"
+      ],
+      "checks": [
+        "检查时辰是否跨边界",
+        "未知时辰则返回信息不足"
+      ],
+      "exceptions": [
+        "不同候选时柱应分别标注",
+        "时间已知也不等于可以预测生育结果"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "说明资料缺失会影响该历史方法"
+      ],
+      "forbidden": [
+        "自行补出生时辰",
+        "由未知时柱判断有无子女"
+      ],
+      "modern_reflection": "家庭和育儿计划应由个人意愿与实际条件讨论。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户不知出生时间却要求时柱子息分析。",
+      "should_not_use": "为完成报告随机补一个时辰。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [
+      "BZ-FAMILY-002"
+    ],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-CHILDREN-002",
+    "version": "0.1.0",
+    "topic": "children",
+    "topic_label": "子女",
+    "title": "官杀子女与食伤子女是不同取法",
+    "card_type": "textual_disagreement",
+    "evidence_relation": "cross_text_conflict",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "子平真诠采用官杀配子女的历史说明 阐微任氏明确提出改用食伤 两种口径须分开。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "23 论宫分用神配六亲",
+        "source_layer": "source_transcription",
+        "quote": "财为妻妾，则官煞为子女矣。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 652,
+        "line_end": 652,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      },
+      {
+        "book_id": "di_tian_sui_chanwei",
+        "book_title": "滴天髓闡微 電子本",
+        "chapter": "二、子女",
+        "source_layer": "ren_commentary",
+        "quote": "今更定以食伤为子女。",
+        "repository_path": "classics/di_tian_sui_chanwei.md",
+        "line_start": 5313,
+        "line_end": 5313,
+        "file_sha256": "4f4deb21f5591d8c2463b83217808b68f82e685fa27338c4cc8ae5f6c7b95c4e",
+        "source_url": "https://zh.wikisource.org/wiki/滴天髓闡微",
+        "source_revision_url": "https://zh.wikisource.org/w/index.php?title=%E6%BB%B4%E5%A4%A9%E9%AB%93%E9%97%A1%E5%BE%AE&oldid=2600158",
+        "source_git_blob": null,
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "所选子女星口径",
+        "来源版本"
+      ],
+      "checks": [
+        "标注不同作者层次",
+        "不得在同一结论中悄悄切换口径"
+      ],
+      "exceptions": [
+        "阐微子女章含疑似转录错字",
+        "此卡不判断哪个体系已获科学验证"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "并列说明两种历史映射"
+      ],
+      "forbidden": [
+        "混用两种规则来凑一个结果",
+        "推断医学意义的生育能力"
+      ],
+      "modern_reflection": "亲子沟通和育儿偏好可另外根据现实情况讨论。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户问为什么两本书对子女星解释不同。",
+      "should_not_use": "解释不合时临时切换另一种子女星。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [
+      "BZ-FAMILY-002"
+    ],
+    "source_quality_flags": [
+      "SRC-003"
+    ],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-CHILDREN-003",
+    "version": "0.1.0",
+    "topic": "children",
+    "topic_label": "子女",
+    "title": "宫分与星的喜忌属于同一分析层次",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "子息段把宫分与星所透喜忌放在一起讨论 不能把一颗星单独当作完整结论。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "24 论妻子",
+        "source_layer": "source_transcription",
+        "quote": "至于子息，其看宫分与星所透喜忌，理与论妻略同。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 680,
+        "line_end": 680,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "可靠出生时间",
+        "完整四柱",
+        "选定子息口径与喜忌"
+      ],
+      "checks": [
+        "分别记录宫位、星与喜忌",
+        "资料不全时不走完整分析"
+      ],
+      "exceptions": [
+        "这里只保留方法结构 不输出原书后续数量与寿夭判语"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "解释为什么资料与条件需要综合检查"
+      ],
+      "forbidden": [
+        "子女必孝顺或不孝",
+        "预言孩子健康与人生结局"
+      ],
+      "modern_reflection": "育儿互动建议依据孩子实际发展阶段与行为。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户询问子女主题为何不能单看某一十神。",
+      "should_not_use": "依据父母单盘给孩子固定人格标签。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [
+      "BZ-FAMILY-002"
+    ],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-CHILDREN-004",
+    "version": "0.1.0",
+    "topic": "children",
+    "topic_label": "子女",
+    "title": "古籍个案不用于精确预测子女数量",
+    "card_type": "product_boundary",
+    "evidence_relation": "editorial_application",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "阐微个案自己也有不敢定其数目的表述 个案经验不能当成经过校准的人数模型。",
+    "sources": [
+      {
+        "book_id": "di_tian_sui_chanwei",
+        "book_title": "滴天髓闡微 電子本",
+        "chapter": "二、子女",
+        "source_layer": "case_commentary",
+        "quote": "余虽断其多子，实不敢定其数目",
+        "repository_path": "classics/di_tian_sui_chanwei.md",
+        "line_start": 5333,
+        "line_end": 5333,
+        "file_sha256": "4f4deb21f5591d8c2463b83217808b68f82e685fa27338c4cc8ae5f6c7b95c4e",
+        "source_url": "https://zh.wikisource.org/wiki/滴天髓闡微",
+        "source_revision_url": "https://zh.wikisource.org/w/index.php?title=%E6%BB%B4%E5%A4%A9%E9%AB%93%E9%97%A1%E5%BE%AE&oldid=2600158",
+        "source_git_blob": null,
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "用户是否要求具体数量",
+        "引用层次为个案还是通论"
+      ],
+      "checks": [
+        "说明个案叙述与一般证据的差别",
+        "不生成子女数目的确定结论"
+      ],
+      "exceptions": [
+        "此卡属于现代产品边界",
+        "不能由一个案例推证所有命理方法的效果"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "解释为什么不给出确定数量"
+      ],
+      "forbidden": [
+        "会生几个孩子",
+        "命里无子",
+        "生育概率百分比"
+      ],
+      "modern_reflection": "家庭规模由意愿、身体情况和现实资源共同决定。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户要求准确算出将来生几个孩子。",
+      "should_not_use": "把古籍数字口诀转成用户的生育保证。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [
+      "BZ-FAMILY-002"
+    ],
+    "source_quality_flags": [
+      "SRC-003"
+    ],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-CHILDREN-005",
+    "version": "0.1.0",
+    "topic": "children",
+    "topic_label": "子女",
+    "title": "历史性别口诀不作为现代生育预测",
+    "card_type": "product_boundary",
+    "evidence_relation": "editorial_application",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "文本提到官女煞男等历史说法 同时讨论取法争议 本产品不把它当作孩子性别或生育能力的依据。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "24 论妻子",
+        "source_layer": "source_transcription",
+        "quote": "虽书有官为女煞为男之说",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 685,
+        "line_end": 685,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "用户问题类型"
+      ],
+      "checks": [
+        "识别性别、受孕、生育能力等预测要求",
+        "说明历史文本与医学事实的区别"
+      ],
+      "exceptions": [
+        "该边界是产品政策 不是原书作出的现代医学结论"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "介绍传统说法的文献存在与方法争议"
+      ],
+      "forbidden": [
+        "预言胎儿性别",
+        "判断不孕",
+        "建议受孕或医疗时机"
+      ],
+      "modern_reflection": "如讨论健康或生育能力 应转向合适的医学评估。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户问八字能否确定未来孩子性别。",
+      "should_not_use": "输出男孩女孩概率或生育诊断。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [
+      "BZ-FAMILY-002"
+    ],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  }
+]
