@@ -1,0 +1,418 @@
+[
+  {
+    "schema_version": "1.0",
+    "id": "BZ-TIMING-001",
+    "version": "0.1.0",
+    "topic": "timing",
+    "topic_label": "岁运",
+    "title": "行运必须与本命配合统看",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "行运段要求把运中的干支与本命整体配合 而非流年生肖独立判断。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "25 论行运",
+        "source_layer": "source_transcription",
+        "quote": "故运中每运行一字，即必以此一字，配命中干支而统观之",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 699,
+        "line_end": 699,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "大运或指定岁运干支",
+        "可靠起运与历法口径",
+        "原局喜忌"
+      ],
+      "checks": [
+        "原局与岁运分别计算并记录",
+        "先固定版本与时间标准"
+      ],
+      "exceptions": [
+        "生日不全时不可伪装个性化",
+        "不从传统结构推断具体必然事件"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "解释为何同一年对不同命盘不是同一套说法"
+      ],
+      "forbidden": [
+        "所有同生肖的人今日运势相同",
+        "某年必升职或分手"
+      ],
+      "modern_reflection": "阶段建议仍需结合用户真实目标和安排。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户问为何不能只按生肖给年度解读。",
+      "should_not_use": "只取当天黄历却声称结合完整本命。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-TIMING-002",
+    "version": "0.1.0",
+    "topic": "timing",
+    "topic_label": "岁运",
+    "title": "相同五行的天干地支不能机械等同",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "文本区分干支不同作用 不能把同五行的干与支当成同一种输入。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "27 论喜忌干支有别",
+        "source_layer": "source_transcription",
+        "quote": "命中喜忌，虽支干俱有，而干主天，动而有为，支主地，静以待用，且干主一而支藏多",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 767,
+        "line_end": 767,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "本命及岁运干支",
+        "地支藏干",
+        "生克合冲计算"
+      ],
+      "checks": [
+        "分别保留天干与地支字段",
+        "检查藏干、透出与会合"
+      ],
+      "exceptions": [
+        "不能用五行数量替代关系判断",
+        "具体力量判断仍需审校"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "解释同五行也有不同结构作用"
+      ],
+      "forbidden": [
+        "见水年与见水运必同结论",
+        "同五行一律打同样分数"
+      ],
+      "modern_reflection": "展示判断差异的依据 比生成单一分数更有信息。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户问为什么同属金的天干与地支解释不同。",
+      "should_not_use": "把干支转成五行后丢掉全部位置信息。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-TIMING-003",
+    "version": "0.1.0",
+    "topic": "timing",
+    "topic_label": "岁运",
+    "title": "岁运可能改变原局讨论的结构",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "行运成格变格段明确讨论运参与后的结构变化 不能把本命标签永久固定。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "26 论行运成格变格",
+        "source_layer": "source_transcription",
+        "quote": "命之格局，成于八字，然配之以运，亦有成格变格之要权。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 745,
+        "line_end": 745,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "大运",
+        "原局结构判断",
+        "岁运关系"
+      ],
+      "checks": [
+        "分别记录原局与运后候选结构",
+        "同时审查成格不喜与变格不忌等例外"
+      ],
+      "exceptions": [
+        "不能把一段大运断成十年所有日子相同",
+        "原文不是现代事件预测验证"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "解释结构会随所叠岁运重新评估"
+      ],
+      "forbidden": [
+        "某格局终身注定某种生活",
+        "十年每一天都吉或都凶"
+      ],
+      "modern_reflection": "把阶段主题与实际职业、关系进展核对。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户问本命格名为什么不能包办所有阶段。",
+      "should_not_use": "对任何岁运永远重复同一份本命结论。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-TIMING-004",
+    "version": "0.1.0",
+    "topic": "timing",
+    "topic_label": "岁运",
+    "title": "季节调候须按具体月份和日主讨论",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "子平真诠要求配合气候 穷通宝鉴春甲木段又区分初春与春末 不支持固定五行通用偏好。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "14 论用神配气候得失",
+        "source_layer": "source_transcription",
+        "quote": "论命惟以月令用神为主，然亦须配气候而互参之。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 456,
+        "line_end": 456,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      },
+      {
+        "book_id": "qiong_tong_bao_jian",
+        "book_title": "窮通寶鑑 電子本",
+        "chapter": "三春甲木",
+        "source_layer": "source_transcription",
+        "quote": "初春猶有餘寒，當以火溫暖",
+        "repository_path": "classics/qiong_tong_bao_jian.md",
+        "line_start": 59,
+        "line_end": 59,
+        "file_sha256": "ad30fda42f49522c7f5f29f6fd3863bab3e48bf1c229cd980bb72cd86c7eae0c",
+        "source_url": "https://zh.wikisource.org/zh-hant/穷通宝鉴",
+        "source_revision_url": "https://zh.wikisource.org/w/index.php?title=%E7%A9%B7%E9%80%9A%E5%AE%9D%E9%89%B4&oldid=2294674",
+        "source_git_blob": null,
+        "edition_status": "transcription_unverified"
+      },
+      {
+        "book_id": "qiong_tong_bao_jian",
+        "book_title": "窮通寶鑑 電子本",
+        "chapter": "三春甲木",
+        "source_layer": "source_transcription",
+        "quote": "春末陽壯水渴，藉水資扶",
+        "repository_path": "classics/qiong_tong_bao_jian.md",
+        "line_start": 59,
+        "line_end": 59,
+        "file_sha256": "ad30fda42f49522c7f5f29f6fd3863bab3e48bf1c229cd980bb72cd86c7eae0c",
+        "source_url": "https://zh.wikisource.org/zh-hant/穷通宝鉴",
+        "source_revision_url": "https://zh.wikisource.org/w/index.php?title=%E7%A9%B7%E9%80%9A%E5%AE%9D%E9%89%B4&oldid=2294674",
+        "source_git_blob": null,
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "日主",
+        "准确月令与节气",
+        "全局寒暖燥湿方法"
+      ],
+      "checks": [
+        "保留书名和版本边界",
+        "不能从甲木一项推出全年喜火"
+      ],
+      "exceptions": [
+        "现代地理天气不直接替代命理月令",
+        "流派取用层次不在模型中随意混合"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "说明为什么季节不同不能统一套同一种偏好"
+      ],
+      "forbidden": [
+        "所有木命永远喜火",
+        "用当天天气替代节气排盘"
+      ],
+      "modern_reflection": "这是传统季节象义说明 不是健康或环境适应能力诊断。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户询问春甲木为何也要区分时段。",
+      "should_not_use": "只凭木命建议长期固定补火。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-TIMING-005",
+    "version": "0.1.0",
+    "topic": "timing",
+    "topic_label": "岁运",
+    "title": "首批证据不足以直接生成每日吉凶",
+    "card_type": "product_boundary",
+    "evidence_relation": "evidence_gap",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "当前所选证据主要讨论本命与行运 太岁段明确是一年层次 尚未建立可审核的流月流日推断规则。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "25 论行运",
+        "source_layer": "source_transcription",
+        "quote": "论运与看命无二法也。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 697,
+        "line_end": 697,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      },
+      {
+        "book_id": "di_tian_sui_chanwei",
+        "book_title": "滴天髓闡微 電子本",
+        "chapter": "二十八、岁运",
+        "source_layer": "ren_commentary",
+        "quote": "太岁管一年否泰",
+        "repository_path": "classics/di_tian_sui_chanwei.md",
+        "line_start": 11359,
+        "line_end": 11359,
+        "file_sha256": "4f4deb21f5591d8c2463b83217808b68f82e685fa27338c4cc8ae5f6c7b95c4e",
+        "source_url": "https://zh.wikisource.org/wiki/滴天髓闡微",
+        "source_revision_url": "https://zh.wikisource.org/w/index.php?title=%E6%BB%B4%E5%A4%A9%E9%AB%93%E9%97%A1%E5%BE%AE&oldid=2600158",
+        "source_git_blob": null,
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "目标日期与当前时区",
+        "完整命盘",
+        "经审核的流日方法"
+      ],
+      "checks": [
+        "区分年运、月运、日运层次",
+        "没有流日规则时返回方法未覆盖"
+      ],
+      "exceptions": [
+        "不声称古籍整体没有流日内容 仅说明首批证据覆盖不足"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "明确目前每日模块可计算日期信息但尚不能据此发布吉凶"
+      ],
+      "forbidden": [
+        "把年运机械缩成日运",
+        "每日编造个人事件"
+      ],
+      "modern_reflection": "可独立提供一般性的每日计划提示 但必须标注不属于命理推断。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户要求由这批卡直接每天预测事件。",
+      "should_not_use": "换一天就随机改写吉凶以制造新鲜感。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  }
+]
