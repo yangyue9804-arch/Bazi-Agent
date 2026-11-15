@@ -167,22 +167,69 @@ def search_sources(catalog, q="", topic=None, status=None, limit=20):
             "notice": "Source discovery only. No verified divination rules or predictions."}
 
 
-def make_handler(catalog_path):
+def search_classics(q, classics_path=ROOT / "classics", limit=10):
+    terms = [term.casefold() for term in q.split() if term]
+    if not terms:
+        raise ValueError("Provide a non-empty query")
+    limit = max(1, min(int(limit), 100))
+    classics_path = Path(classics_path)
+    books = read_json(classics_path / "manifest.json", [])
+    matches = []
+    for book in books:
+        text = (classics_path / Path(book["path"]).name).read_text(encoding="utf-8")
+        active, chapter, paragraph, start = False, "", [], 0
+        def emit():
+            if not paragraph:
+                return
+            value = "\n".join(paragraph)
+            if all(term in value.casefold() for term in terms):
+                matches.append({"book_id": book["id"], "title": book["title"],
+                                "chapter": chapter, "line_start": start,
+                                "path": book["path"], "text": value,
+                                "source_url": book["source_url"],
+                                "file_sha256": book["file_sha256"],
+                                "review_status": book["review_status"]})
+        for number, line in enumerate(text.splitlines(), 1):
+            if not active:
+                active = line == "---"
+                continue
+            if line.startswith("#"):
+                emit()
+                paragraph = []
+                chapter = line.lstrip("# ")
+            elif not line.strip():
+                emit()
+                paragraph = []
+            else:
+                if not paragraph:
+                    start = number
+                paragraph.append(line)
+        emit()
+    return {"kind": "classical_text_passages", "total": len(matches),
+            "results": matches[:limit], "approved_knowledge_rules": 0,
+            "notice": "Exact transcription passages; not expert-approved rules or personal predictions."}
+
+
+def make_handler(catalog_path, classics_path=ROOT / "classics"):
     class Handler(BaseHTTPRequestHandler):
         def do_GET(self):
             parsed = urlsplit(self.path)
-            if parsed.path not in {"/search", "/health"}:
-                self.respond(404, {"error": "Use /search?q=... or /health"})
+            if parsed.path not in {"/search", "/passages", "/health"}:
+                self.respond(404, {"error": "Use /search, /passages or /health"})
                 return
             try:
                 if parsed.path == "/health":
                     value = {"status": "ok", "kind": "source_catalogue"}
                 else:
                     p = parse_qs(parsed.query)
-                    value = search_sources(read_json(catalog_path, []), p.get("q", [""])[0],
-                                           p.get("topic", [None])[0],
-                                           p.get("status", [None])[0],
-                                           int(p.get("limit", ["20"])[0]))
+                    if parsed.path == "/passages":
+                        value = search_classics(p.get("q", [""])[0], classics_path,
+                                                int(p.get("limit", ["10"])[0]))
+                    else:
+                        value = search_sources(read_json(catalog_path, []), p.get("q", [""])[0],
+                                               p.get("topic", [None])[0],
+                                               p.get("status", [None])[0],
+                                               int(p.get("limit", ["20"])[0]))
                 self.respond(200, value)
             except ValueError:
                 self.respond(400, {"error": "Invalid filter or catalogue"})
@@ -212,6 +259,9 @@ def main():
     search.add_argument("query")
     search.add_argument("--topic")
     search.add_argument("--status", choices=["candidate", "reviewed", "rejected"])
+    passages = sub.add_parser("passages")
+    passages.add_argument("query")
+    passages.add_argument("--limit", type=int, default=10)
     server = sub.add_parser("serve")
     server.add_argument("--port", type=int, default=8765)
     args = parser.parse_args()
@@ -221,6 +271,9 @@ def main():
         if args.command == "search":
             print(json.dumps(search_sources(read_json(args.catalog, []), args.query,
                                             args.topic, args.status), ensure_ascii=False, indent=2))
+            return 0
+        if args.command == "passages":
+            print(json.dumps(search_classics(args.query, limit=args.limit), ensure_ascii=False, indent=2))
             return 0
         # Intentionally local-only. Deployment needs authentication and TLS separately.
         print(f"Source API listening on http://127.0.0.1:{args.port}/search", flush=True)
