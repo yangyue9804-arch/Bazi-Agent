@@ -1,0 +1,35 @@
+{
+  "status": "open",
+  "source_quality_not_expert_verified": true,
+  "issues": [
+    {
+      "id": "SRC-001",
+      "book_id": "zi_ping_zhen_quan_original",
+      "location": "08 论用神",
+      "kind": "label_contamination_suspected",
+      "note": "原文标记中出现五种取用法分类等段落。原文与评注边界尚须早期影印底本复核。首批知识卡不以这些段落为依据。"
+    },
+    {
+      "id": "SRC-002",
+      "book_id": "zi_ping_zhen_quan_original",
+      "location": "09 论用神成败救应",
+      "kind": "label_contamination_suspected",
+      "note": "部分原文标记段落可能混有解释性评注。首批卡仅作有版本限制的文献提炼 不作为确定作者归属的证明。"
+    },
+    {
+      "id": "SRC-003",
+      "book_id": "di_tian_sui_chanwei",
+      "location": "六亲论 子女 父母",
+      "kind": "transcription_errors_suspected",
+      "note": "上下文存在明显可疑转录字词。保留原样 不机械纠字。有关卡片限制为取法分歧与方法讨论。"
+    },
+    {
+      "id": "SRC-004",
+      "book_id": "zi_ping_zhen_quan_original",
+      "location": "08 论用神 原第295行",
+      "kind": "web_navigation_removed",
+      "status": "cleaned",
+      "note": "删除一行class=prev与下一页导航残片。保留上版Git历史和文件校验值。"
+    }
+  ]
+}
