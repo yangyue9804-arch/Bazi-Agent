@@ -1,0 +1,417 @@
+[
+  {
+    "schema_version": "1.0",
+    "id": "BZ-CAREER-001",
+    "version": "0.1.0",
+    "topic": "career",
+    "topic_label": "事业",
+    "title": "职业主题先看整体结构 不凭一颗星定职业",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "文本认为格局高低与有情、有力相关 不能仅按十神名称指定现代职业。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "12 论用神格局高低",
+        "source_layer": "source_transcription",
+        "quote": "财官印食煞伤劫刃，何格无贵？何格无贱？",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 413,
+        "line_end": 413,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      },
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "12 论用神格局高低",
+        "source_layer": "source_transcription",
+        "quote": "亦在有情无情、有力无力之间而已。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 413,
+        "line_end": 413,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "选定格局判断口径",
+        "日主与相关十神的力量判断"
+      ],
+      "checks": [
+        "先说明采用的文本与方法",
+        "审查全局关系后才讨论某个结构"
+      ],
+      "exceptions": [
+        "格局诊断未完成时只能解释概念",
+        "古代贵贱不能直接等于现代职级"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "解释同一种十神可能出现在不同结构中"
+      ],
+      "forbidden": [
+        "从官星推断必做公务员",
+        "从伤官推断必适合创业"
+      ],
+      "modern_reflection": "询问用户实际技能、工作偏好与经历 后续职业建议据现实资料另作分析。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户问为什么同样有伤官的人工作方式不同。",
+      "should_not_use": "只给一个日干就要求确定行业。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-CAREER-002",
+    "version": "0.1.0",
+    "topic": "career",
+    "topic_label": "事业",
+    "title": "印用食伤须检查身印强弱",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "印格讨论中 身强印旺与印浅身轻使用食伤的评价不同。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "35 论印绶",
+        "source_layer": "source_transcription",
+        "quote": "有印而用伤食者，身强印旺，恐其太过，泄身以为秀气。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 954,
+        "line_end": 954,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      },
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "35 论印绶",
+        "source_layer": "source_transcription",
+        "quote": "若印浅身轻，而用层层伤食，则寒贫之局矣。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 955,
+        "line_end": 955,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "印格识别",
+        "身印与食伤强弱"
+      ],
+      "checks": [
+        "同时检查身强印旺条件",
+        "检查食伤是否过重"
+      ],
+      "exceptions": [
+        "不能把有印等同于印格",
+        "贫富判语不作现代收入结论"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "在传统框架下解释为何重视输出与制衡"
+      ],
+      "forbidden": [
+        "有印就高学历",
+        "一定靠专业资格赚钱"
+      ],
+      "modern_reflection": "可让用户自评学习积累能否转成作品或工作成果 这属于现代反思。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "已审校为身强印旺结构后解释泄秀概念。",
+      "should_not_use": "因用户有CPA就反推其必为印旺。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-CAREER-003",
+    "version": "0.1.0",
+    "topic": "career",
+    "topic_label": "事业",
+    "title": "七杀用食制须三方力量配合",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "七杀用食制的文本条件同时涉及杀、食与日主 并非七杀越多越好。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "39 论偏官",
+        "source_layer": "source_transcription",
+        "quote": "煞用食制者，上也，煞旺食强而身健，极为贵格。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 1059,
+        "line_end": 1059,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "杀格及食神关系",
+        "日主强弱"
+      ],
+      "checks": [
+        "核查杀旺、食强、身健",
+        "另查财印介入是否改变制化"
+      ],
+      "exceptions": [
+        "杀轻食重等情况不能套用",
+        "古代贵格不等于现代管理能力"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "解释此段所述制化条件"
+      ],
+      "forbidden": [
+        "七杀必有领导力",
+        "适合高风险工作或冒险投资"
+      ],
+      "modern_reflection": "工作压力和应对能力应由用户经历验证 不由七杀数量代替。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户追问七杀用食制为什么不是看到七杀就成立。",
+      "should_not_use": "只看到七杀就建议辞职创业。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-CAREER-004",
+    "version": "0.1.0",
+    "topic": "career",
+    "topic_label": "事业",
+    "title": "伤官佩印不以见印即成立",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "该段要求伤官旺、身稍弱等条件 并提示印过多和伤轻身重不能同论。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "41 论伤官",
+        "source_layer": "source_transcription",
+        "quote": "有伤官佩印者，印能制伤，所以为贵，反要伤官旺，身稍弱，始为秀气。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 1123,
+        "line_end": 1123,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      },
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "41 论伤官",
+        "source_layer": "source_transcription",
+        "quote": "伤轻身重而印绶多见，贫穷之格也。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 1125,
+        "line_end": 1125,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "伤官与印的强弱",
+        "日主强弱"
+      ],
+      "checks": [
+        "不得只检查两种十神同时存在",
+        "检查印的根与轻重"
+      ],
+      "exceptions": [
+        "结构变化与调候影响需另审",
+        "不直接从格名断学历职位"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "按条件解释佩印与制伤"
+      ],
+      "forbidden": [
+        "必进大公司",
+        "必靠学历升职"
+      ],
+      "modern_reflection": "可比较个人表达与组织规范的实际磨合情境 不能称为命盘证实。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "经审校后解释伤官佩印的限制。",
+      "should_not_use": "用户仅说自己敢说话就套伤官佩印。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-CAREER-005",
+    "version": "0.1.0",
+    "topic": "career",
+    "topic_label": "事业",
+    "title": "正官结构的辅助与相碍要分开",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "论正官中 财印并透还需要检查两者是否相碍 不能把官印财齐全视为固定好结构。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "31 论正官",
+        "source_layer": "source_transcription",
+        "quote": "以财印并透者论之，两不相碍，其贵也大。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 840,
+        "line_end": 840,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "正官格判断",
+        "财印位置及作用"
+      ],
+      "checks": [
+        "核查财印是否相碍",
+        "检查伤官与官杀混杂等文本条件"
+      ],
+      "exceptions": [
+        "不把古代官职等级换算现代职级",
+        "引用局部时须保留上下文限制"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "介绍财印配置需要分别检查"
+      ],
+      "forbidden": [
+        "官印双全必升职",
+        "下一年必当Manager"
+      ],
+      "modern_reflection": "升职判断应回到绩效、岗位机会与组织支持。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户问为什么财印同见仍需看位置。",
+      "should_not_use": "用单颗正官直接给晋升日期。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  }
+]
