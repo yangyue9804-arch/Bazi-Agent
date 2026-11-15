@@ -1,0 +1,388 @@
+[
+  {
+    "schema_version": "1.0",
+    "id": "BZ-COMPATIBILITY-001",
+    "version": "0.1.0",
+    "topic": "compatibility",
+    "topic_label": "合盘",
+    "title": "合盘前先分别完成两张单盘",
+    "card_type": "editorial_workflow",
+    "evidence_relation": "editorial_application",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "从整体命盘分析原则出发 设计先分别排盘与记录口径的工作流 这不是所引古籍直接记载的双人合婚定律。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "28 论支中喜忌逢运透清",
+        "source_layer": "source_transcription",
+        "quote": "故凡一八字到手，必须逐干逐支，上下统看。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 785,
+        "line_end": 785,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "双方分别授权提供的出生资料",
+        "双方排盘口径",
+        "关系状态与问题"
+      ],
+      "checks": [
+        "两份原局独立核验",
+        "时间未知或边界情况分别标记",
+        "双方采用相同计算标准"
+      ],
+      "exceptions": [
+        "仅一人资料时不能输出完整双人合盘",
+        "本卡没有判定二人合不合的方法"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "输出两份资料完整性与分析准备清单"
+      ],
+      "forbidden": [
+        "单盘星象冒充双人互动结论",
+        "给出匹配率"
+      ],
+      "modern_reflection": "收集双方实际需求、价值观和沟通习惯。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "准备双人报告前检查资料与方法是否齐备。",
+      "should_not_use": "只有一个人的出生日期就给完整合盘结论。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [
+      "BZ-TIMING-001",
+      "BZ-LOVE-001"
+    ],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-COMPATIBILITY-002",
+    "version": "0.1.0",
+    "topic": "compatibility",
+    "topic_label": "合盘",
+    "title": "五行互补不能仅按缺多少计算",
+    "card_type": "editorial_workflow",
+    "evidence_relation": "editorial_application",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "原文强调根、藏干和发用 据此设置双盘分析的前置质量要求 不直接把一方缺某五行与另一方多该五行认作相配。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "28 论支中喜忌逢运透清",
+        "source_layer": "source_transcription",
+        "quote": "支为干之生地，干为支之发用。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 786,
+        "line_end": 786,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "双方独立命盘",
+        "双方各自经审核的取用判断",
+        "双盘方法来源"
+      ],
+      "checks": [
+        "先完成双方单盘判断",
+        "若要称互补 须另有明确双盘规则与依据"
+      ],
+      "exceptions": [
+        "所引文本是单盘原则 不能证明双盘互补成立"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "说明缺项计数不足以形成合盘结论"
+      ],
+      "forbidden": [
+        "你缺水他水多所以天生一对",
+        "用五行数量合计生成分数"
+      ],
+      "modern_reflection": "现实互补需讨论分工、生活安排和价值取向。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户用五行缺项要求判断是否适合结婚。",
+      "should_not_use": "只有双方五行个数就发布高匹配率。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [
+      "BZ-TIMING-001",
+      "BZ-LOVE-001"
+    ],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-COMPATIBILITY-003",
+    "version": "0.1.0",
+    "topic": "compatibility",
+    "topic_label": "合盘",
+    "title": "单盘妻星不能替对方命盘发言",
+    "card_type": "editorial_workflow",
+    "evidence_relation": "editorial_application",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "古籍妻宫妻星方法描述单盘结构 将其扩展为对方的实际行为或双方命定关系缺少直接依据。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "24 论妻子",
+        "source_layer": "source_transcription",
+        "quote": "既看妻宫，又看妻星。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 673,
+        "line_end": 673,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "双方资料完整性",
+        "用户要求的结论类型"
+      ],
+      "checks": [
+        "给每个结论标记来自A盘、B盘还是双盘证据",
+        "未建立双盘证据时不跨层推论"
+      ],
+      "exceptions": [
+        "不默认异性婚姻角色",
+        "不读取对方未表达的意愿"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "区分个人关系解读与双人关系分析"
+      ],
+      "forbidden": [
+        "他就是你命里的正缘",
+        "对方一定爱你或出轨"
+      ],
+      "modern_reflection": "对方意愿需要由对方真实表达。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户用自己的妻星或夫星要求锁定某个对象。",
+      "should_not_use": "把自身关系符号当成对象真实心理。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [
+      "BZ-TIMING-001",
+      "BZ-LOVE-001"
+    ],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-COMPATIBILITY-004",
+    "version": "0.1.0",
+    "topic": "compatibility",
+    "topic_label": "合盘",
+    "title": "跨盘合冲先描述关系 不直接判婚姻成败",
+    "card_type": "editorial_workflow",
+    "evidence_relation": "editorial_application",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "单盘行运文本对冲的轻重也有条件区分 不能把一个跨盘合冲直接转换为婚姻成败。实际跨盘解释仍需专门依据。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "25 论行运",
+        "source_layer": "source_transcription",
+        "quote": "又有同是相冲而分轻重者，何也？运本美而逢冲则轻，运既忌而又冲则重也。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 736,
+        "line_end": 736,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "双方命盘",
+        "可计算的干支关系",
+        "经过验证的双盘解释方法"
+      ],
+      "checks": [
+        "可计算字段与解释判断分开",
+        "注明引用来自单盘行运语境 不自动移植"
+      ],
+      "exceptions": [
+        "本卡只约束解释 不提供跨盘合冲吉凶规则"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "描述双方某干支构成何种计算关系 并注明解释尚待依据"
+      ],
+      "forbidden": [
+        "相合就必幸福",
+        "相冲就必须分手",
+        "冲代表一方伤害另一方"
+      ],
+      "modern_reflection": "评价关系质量应观察实际相处、边界与安全。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "计算到双方日支相冲后说明不能单项判婚姻结果。",
+      "should_not_use": "用一个合冲关系决定是否结婚。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [
+      "BZ-TIMING-001",
+      "BZ-LOVE-001"
+    ],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-COMPATIBILITY-005",
+    "version": "0.1.0",
+    "topic": "compatibility",
+    "topic_label": "合盘",
+    "title": "双人岁运与最终配对判断仍有证据缺口",
+    "card_type": "editorial_workflow",
+    "evidence_relation": "evidence_gap",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "可以规划分别展示双方阶段信息 但两人的岁运如何组合、加权与解释尚需独立方法证据 不能从单盘变格规则直接推出。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "26 论行运成格变格",
+        "source_layer": "source_transcription",
+        "quote": "命之格局，成于八字，然配之以运，亦有成格变格之要权。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 745,
+        "line_end": 745,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "双方完整命盘与起运口径",
+        "目标时间区间",
+        "双盘岁运规则"
+      ],
+      "checks": [
+        "双方时间轴分别记录",
+        "未获双盘规则时将互动结论标为未覆盖",
+        "不生成未经校准的概率分数"
+      ],
+      "exceptions": [
+        "时间阶段相似不等于现实相容",
+        "不同阶段不等于不能在一起"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "说明已覆盖的单盘层次与未覆盖的互动层次"
+      ],
+      "forbidden": [
+        "某年必结婚或离婚",
+        "合盘成功率百分比",
+        "选择必然成功的婚期"
+      ],
+      "modern_reflection": "共同规划可依据双方实际工作、家庭和生活节奏。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户要求比较未来几年双方相处节奏时先说明证据范围。",
+      "should_not_use": "把两份年度摘要拼接后称为已验证双人预测。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [
+      "BZ-TIMING-001",
+      "BZ-LOVE-001"
+    ],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  }
+]
