@@ -214,15 +214,22 @@ def make_handler(catalog_path, classics_path=ROOT / "classics"):
     class Handler(BaseHTTPRequestHandler):
         def do_GET(self):
             parsed = urlsplit(self.path)
-            if parsed.path not in {"/search", "/passages", "/health"}:
-                self.respond(404, {"error": "Use /search, /passages or /health"})
+            if parsed.path not in {"/search", "/passages", "/cards", "/health"}:
+                self.respond(404, {"error": "Use /search, /passages, /cards or /health"})
                 return
             try:
                 if parsed.path == "/health":
                     value = {"status": "ok", "kind": "source_catalogue"}
                 else:
                     p = parse_qs(parsed.query)
-                    if parsed.path == "/passages":
+                    if parsed.path == "/cards":
+                        from knowledge_tools import search_cards
+                        flag = p.get("include_drafts", ["false"])[0]
+                        if flag not in {"true", "false"}:
+                            raise ValueError("Use true or false for include_drafts")
+                        value = search_cards(p.get("q", [""])[0], p.get("topic", [None])[0],
+                                             flag == "true", int(p.get("limit", ["20"])[0]))
+                    elif parsed.path == "/passages":
                         value = search_classics(p.get("q", [""])[0], classics_path,
                                                 int(p.get("limit", ["10"])[0]))
                     else:
