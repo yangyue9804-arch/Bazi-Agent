@@ -2,7 +2,21 @@
 
 为八字 Agent 建立可持续维护的公开资料与古籍文本库。当前包括网页搜索API采集器、去重与分类、初始来源目录、4份古籍电子正文、本地目录及正文检索API、测试和GitHub Actions工作流。
 
-当前已有古籍正文 可按关键词返回原文与出处。尚无经专家审核的命理规则、语义向量RAG或在线部署的AI算命服务。八字是传统文化解释体系 不应当作经过科学验证的未来预测方法。
+当前已有古籍正文和35张带出处的知识卡草稿 可按主题或关键词检索。尚无经专家审核的命理规则、语义向量RAG或在线部署的AI算命服务。八字是传统文化解释体系 不应当作经过科学验证的未来预测方法。
+
+## 第一批知识卡
+
+[查看35张知识卡及出处](knowledge/README.md)。事业、爱情、家庭、财富、子女、岁运、合盘各5张。每张有精确引文、文件校验值、行号、适用条件、例外、输出边界和内容路由样例。
+
+全部为待审校草稿。文本对应关系已检查 不等于命理推断经过验证。合盘卡属于编辑工作流或证据缺口 不冒充古籍直接提供的双盘规则。资料中的六亲取法分歧和转录问题见 [来源质量记录](knowledge/source_quality.json)。
+
+```bash
+python knowledge_tools.py validate
+python knowledge_tools.py search --topic career --include-drafts
+python knowledge_tools.py search 比劫 --include-drafts
+```
+
+本地知识卡接口：`GET http://127.0.0.1:8765/cards?topic=career&include_drafts=true`。默认不包含草稿 因此当前不传include_drafts会返回0张正式规则。适用条件仍需人工判断 本版本不自动执行命理推断。
 
 ## 已有资源
 
@@ -81,7 +95,7 @@ python bazi_resources.py collect --mode latest
 python -m unittest discover -s tests -v
 ```
 
-9项测试覆盖URL安全与去重、保留分集、保留人工审核信息、候选状态、提供商参数、古籍文件完整性、47章原文提取结构、引用行号及真实本地HTTP检索。外部Brave端到端调用需要实际Key 本次未测试。
+15项测试覆盖URL安全与去重、提供商参数、古籍文件完整性、47章提取结构、35张卡片的引用校验、文本分歧保留、伪造引用拒绝、未审卡片发布隔离及真实本地HTTP检索。外部Brave端到端调用需要实际Key 本次未测试。
 
 ## 技术依据
 
