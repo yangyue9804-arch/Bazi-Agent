@@ -1,0 +1,384 @@
+[
+  {
+    "schema_version": "1.0",
+    "id": "BZ-FAMILY-001",
+    "version": "0.1.0",
+    "topic": "family",
+    "topic_label": "家庭",
+    "title": "年月日时配六亲属于历史宫位约定",
+    "card_type": "historical_convention",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "论宫分用神配六亲按年月日时讨论祖父妻子等位置 这是历史解释约定。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "23 论宫分用神配六亲",
+        "source_layer": "source_transcription",
+        "quote": "其由宫分配之者，则年月日时，自上而下，祖父妻子，亦自上而下。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 646,
+        "line_end": 646,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "六亲取法口径"
+      ],
+      "checks": [
+        "说明历史文本如何配位",
+        "不要把约定当现代家庭事实"
+      ],
+      "exceptions": [
+        "现代多元家庭结构不必与历史映射一致"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "解释宫位的来源和用途"
+      ],
+      "forbidden": [
+        "由年柱断定父母职业",
+        "由月柱确定家庭资产"
+      ],
+      "modern_reflection": "实际家庭成员与支持关系由用户描述。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户询问四柱宫位为何关联不同六亲。",
+      "should_not_use": "用户不提供家庭情况却生成家庭事实。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-FAMILY-002",
+    "version": "0.1.0",
+    "topic": "family",
+    "topic_label": "家庭",
+    "title": "财父印母的取法存在文本异议",
+    "card_type": "textual_disagreement",
+    "evidence_relation": "cross_text_conflict",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "子平真诠转录有印母财父之说 阐微本任氏段落对财印分配父母提出异议 不应合并成无分歧定律。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "23 论宫分用神配六亲",
+        "source_layer": "source_transcription",
+        "quote": "正印为母，则偏财为父矣。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 650,
+        "line_end": 650,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      },
+      {
+        "book_id": "di_tian_sui_chanwei",
+        "book_title": "滴天髓闡微 電子本",
+        "chapter": "三、父母",
+        "source_layer": "ren_commentary",
+        "quote": "原注竟以财印分属父母",
+        "repository_path": "classics/di_tian_sui_chanwei.md",
+        "line_start": 5463,
+        "line_end": 5463,
+        "file_sha256": "4f4deb21f5591d8c2463b83217808b68f82e685fa27338c4cc8ae5f6c7b95c4e",
+        "source_url": "https://zh.wikisource.org/wiki/滴天髓闡微",
+        "source_revision_url": "https://zh.wikisource.org/w/index.php?title=%E6%BB%B4%E5%A4%A9%E9%AB%93%E9%97%A1%E5%BE%AE&oldid=2600158",
+        "source_git_blob": null,
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "选择的文本版本",
+        "六亲解释方法"
+      ],
+      "checks": [
+        "并列显示两种文本立场",
+        "先固定使用哪种口径"
+      ],
+      "exceptions": [
+        "阐微段落上下文有疑似转录错误",
+        "不自行替作者修正文字"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "明确说明来源分歧和待校勘状态"
+      ],
+      "forbidden": [
+        "把两种映射同时当成唯一正确规则",
+        "预测父母疾病寿命"
+      ],
+      "modern_reflection": "用实际家庭资料理解用户处境 不从命盘给家人定性。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户比较两本书的父母星取法。",
+      "should_not_use": "隐去分歧后给父母健康结论。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [
+      "SRC-003"
+    ],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-FAMILY-003",
+    "version": "0.1.0",
+    "topic": "family",
+    "topic_label": "家庭",
+    "title": "比肩配兄弟是象义 不代表人数",
+    "card_type": "historical_convention",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "比肩为兄弟是文本中的六亲象义 不能从符号出现次数直接统计实际兄弟姐妹。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "23 论宫分用神配六亲",
+        "source_layer": "source_transcription",
+        "quote": "至于比肩为兄弟，又理之显然者。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 653,
+        "line_end": 653,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "十神映射",
+        "用户实际家庭成员信息"
+      ],
+      "checks": [
+        "区分象义和现实人数",
+        "不从缺星推出没有兄弟姐妹"
+      ],
+      "exceptions": [
+        "此段不提供经过验证的人数推算模型"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "解释比肩的历史亲属象义"
+      ],
+      "forbidden": [
+        "两个比肩必有两个兄弟",
+        "无比肩必为独生子女"
+      ],
+      "modern_reflection": "讨论同辈支持和边界前先询问真实关系。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户询问比肩为何用于六亲讨论。",
+      "should_not_use": "仅数比肩数量就填家庭人数。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-FAMILY-004",
+    "version": "0.1.0",
+    "topic": "family",
+    "topic_label": "家庭",
+    "title": "六亲象义要放回全局喜忌",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "文本要求把六亲象义与四柱位置和用神喜忌参配 而非单符号下结论。",
+    "sources": [
+      {
+        "book_id": "zi_ping_zhen_quan_original",
+        "book_title": "子平真诠 原文提取版",
+        "chapter": "23 论宫分用神配六亲",
+        "source_layer": "source_transcription",
+        "quote": "局中作何喜忌，参而配之，可以了然矣。",
+        "repository_path": "classics/zi_ping_zhen_quan_original.md",
+        "line_start": 656,
+        "line_end": 656,
+        "file_sha256": "386175503336b8299d90d4b94e59fc5deb6d2d039748446b3cf363a567b61972",
+        "source_url": "https://github.com/liangqis/Chinese-minglixue/blob/main/子平真诠/full-text.md",
+        "source_revision_url": null,
+        "source_git_blob": "ff64affeca80440cba6816a6fa3f46813a6a02da",
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "位置与喜忌判断",
+        "明确六亲取法"
+      ],
+      "checks": [
+        "先列具体位置和作用",
+        "检查资料不足或来源冲突"
+      ],
+      "exceptions": [
+        "不把喜忌解释成某位家人善恶或责任"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "说明六亲分析在文本中依赖多项条件"
+      ],
+      "forbidden": [
+        "某家人天生拖累你",
+        "命盘证明原生家庭有问题"
+      ],
+      "modern_reflection": "可邀请用户区分实际得到的支持与承担的责任。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "追问为什么不能只看财星判断父亲。",
+      "should_not_use": "忽略现实资料给家人贴负面标签。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "BZ-FAMILY-005",
+    "version": "0.1.0",
+    "topic": "family",
+    "topic_label": "家庭",
+    "title": "比劫的家庭解释须比较作用",
+    "card_type": "classical_method",
+    "evidence_relation": "direct_text",
+    "school": "子平文本脉络 版本分别记录",
+    "principle": "兄弟章原注要求将比劫等与提纲、财喜神比较轻重 并非比劫一律有害。",
+    "sources": [
+      {
+        "book_id": "di_tian_sui_chanwei",
+        "book_title": "滴天髓闡微 電子本",
+        "chapter": "四、兄弟",
+        "source_layer": "original_commentary",
+        "quote": "要在提纲之神，与财神喜神较其重轻",
+        "repository_path": "classics/di_tian_sui_chanwei.md",
+        "line_start": 5549,
+        "line_end": 5549,
+        "file_sha256": "4f4deb21f5591d8c2463b83217808b68f82e685fa27338c4cc8ae5f6c7b95c4e",
+        "source_url": "https://zh.wikisource.org/wiki/滴天髓闡微",
+        "source_revision_url": "https://zh.wikisource.org/w/index.php?title=%E6%BB%B4%E5%A4%A9%E9%AB%93%E9%97%A1%E5%BE%AE&oldid=2600158",
+        "source_git_blob": null,
+        "edition_status": "transcription_unverified"
+      }
+    ],
+    "applicability": {
+      "required_inputs": [
+        "完整四柱",
+        "提纲及财喜神口径",
+        "比劫作用判断"
+      ],
+      "checks": [
+        "只使用引文可支持的比较原则",
+        "可疑转录段不扩展为具体事件"
+      ],
+      "exceptions": [
+        "兄弟章其余部分存在疑似转录问题"
+      ],
+      "requires_expert_judgment": true,
+      "auto_applicable": false
+    },
+    "interpretation": {
+      "allowed": [
+        "说明传统文本也要求比较条件"
+      ],
+      "forbidden": [
+        "兄弟必争家产",
+        "比劫代表亲友不值得信任"
+      ],
+      "modern_reflection": "家庭金钱往来可建立清楚的实际约定。",
+      "reflection_is_classical_claim": false
+    },
+    "evaluation_examples": {
+      "should_use": "用户因比劫担心兄弟姐妹一定夺财。",
+      "should_not_use": "根据比劫指控现实亲属。",
+      "kind": "synthetic_content_routing_examples_not_prediction_validation"
+    },
+    "related_cards": [],
+    "source_quality_flags": [
+      "context_transcription_unverified"
+    ],
+    "review": {
+      "status": "draft",
+      "ai_source_quote_checked": true,
+      "expert_reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "publication_eligible": false
+    },
+    "license": "CC-BY-SA-4.0 for this knowledge card; see knowledge/README.md",
+    "updated_at": "2026-11-15T02:35:16+00:00"
+  }
+]
